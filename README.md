@@ -1,5 +1,5 @@
 # Survey on Physics Engines, Simulation Frameworks, and Benchmarks for Robot Learning
-This is the accompanying repository from the paper "Survey on Physics Engines, Simulation Frameworks, and Benchmarks for Robot Learning." This repository tracks updates in the field following our definition of Physics Engines, Simulation Frameworks, and Benchmarks in the robot learning domain.
+This is the accompanying repository from the paper "Survey on Physics Engines, Simulation Frameworks, and Benchmarks for Robot Learning." This repository tracks updates in the field following our definition of Physics Engines, Simulation Frameworks, and Benchmarks in the robot learning domain. We include a curated list of tools for each type of software, but more exhaustive lists can be found in other repositories (see the [best-of-robot-simulators](https://github.com/knmcguire/best-of-robot-simulators) for example). 
 
 
 ## Comparison of features across physics engines typically used in Robot Learning 
