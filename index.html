@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
   <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
 
   <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
@@ -26,15 +27,14 @@
 
   <title>Academic Project Page</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/sim_gallery.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -44,6 +44,7 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
 <body>
 
 
@@ -52,37 +53,38 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Survey on Physics Engines, Simulation Frameworks, and Benchmarks for Robot Learning</h1>
+            <h1 class="title is-1 publication-title">Survey on Physics Engines, Simulation Frameworks, and Benchmarks
+              for Robot Learning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+              <span class="author-block">
+                <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+              <span class="author-block">
+                <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+              </span>
+            </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">Institution Name<br>Conferance name and year</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
                     </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
 
-                    <!-- Supplementary PDF link 
+                <!-- Supplementary PDF link 
                     <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
@@ -93,9 +95,9 @@
                     </a>
                   </span> -->
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -107,73 +109,333 @@
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-              Robot learning research is rapidly advancing and relies heavily on simulation tools---physics engines, simulation frameworks, and benchmarks---to develop and evaluate algorithms faster, safer, and more cost-effectively than using physical hardware alone. However, the recent explosion of such tools has created a fragmented landscape, making it difficult for researchers to navigate options or forcing them to constantly re-implement baselines. This challenge is amplified by blurry terminology, where terms like "simulator" are used ambiguously. To address this, our survey makes four key contributions: (1) We introduce a formal Robot Learning Problem definition to standardize terminology and categorize existing tools accordingly. (2) We provide a comprehensive overview of the features, strengths, and weaknesses of current simulation tools, based on literature and hands-on evaluation. (3) We offer guidelines for tool selection tailored to major robot learning domains: vision manipulation, locomotion, and navigation. (4) We introduce an accompanying open, living repository to track updates in the field. By systematically structuring the simulation landscape, we aim to lower the entry barrier for newcomers, reduce redundant engineering for experts, and accelerate progress toward reproducible, general-purpose robot learning systems.
-          </p>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Robot learning research is rapidly advancing and relies heavily on simulation tools---physics engines,
+              simulation frameworks, and benchmarks---to develop and evaluate algorithms faster, safer, and more
+              cost-effectively than using physical hardware alone. However, the recent explosion of such tools has
+              created a fragmented landscape, making it difficult for researchers to navigate options or forcing them to
+              constantly re-implement baselines. This challenge is amplified by blurry terminology, where terms like
+              "simulator" are used ambiguously. To address this, our survey makes four key contributions: (1) We
+              introduce a formal Robot Learning Problem definition to standardize terminology and categorize existing
+              tools accordingly. (2) We provide a comprehensive overview of the features, strengths, and weaknesses of
+              current simulation tools, based on literature and hands-on evaluation. (3) We offer guidelines for tool
+              selection tailored to major robot learning domains: vision manipulation, locomotion, and navigation. (4)
+              We introduce an accompanying open, living repository to track updates in the field. By systematically
+              structuring the simulation landscape, we aim to lower the entry barrier for newcomers, reduce redundant
+              engineering for experts, and accelerate progress toward reproducible, general-purpose robot learning
+              systems.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+  </section>
+  <!-- End paper abstract -->
 
+  <section class="sim-gallery">
+    <h2 class="title is-3">Simulators/Benchmarks Preview</h2>
 
-<!--BibTex citation -->
+    <section id="isaacsim" class="sim-section">
+      <h3><a src="https://isaac-sim.github.io/IsaacLab/main/source/overview/environments.html"
+          target="_blank">IsaacSim</a></h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_ant.jpg" alt="Isaac Sim Ant">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_automate_assembly.jpg" alt="Automate Assembly">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_contact_rich.jpg" alt="Contact Rich">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_franka_lift.jpg" alt="Franka Lift">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_franka_stack.jpg" alt="Franka Stack">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_gr1_pick_place.jpg" alt="GR1 Pick & Place">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_h1_rough.jpg" alt="H1 Rough">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_manip_world.jpg" alt="Manip World">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_nav.jpg" alt="Navigation">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_open_drawer.jpg" alt="Open Drawer">
+      </div>
+    </section>
+
+    <section id="sapien_ms3" class="sim-section">
+      <h3><a src="https://maniskill.readthedocs.io/en/latest/tasks/index.html" target="_blank">Sapien/Maniskill3</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/ms3/ms3_anymalc_reach.png" alt="Anymal Reach">
+        <img src="static/images/sim_preview/ms3/ms3_assembling_kits.png" alt="Assembling Kits">
+        <img src="static/images/sim_preview/ms3/ms3_g1_apple_in_bowl.png" alt="Apple in Bowl">
+        <img src="static/images/sim_preview/ms3/ms3_g1_transport_box.png" alt="Transport Box">
+        <img src="static/images/sim_preview/ms3/ms3_hand_manip.png" alt="Hand Manipulation">
+        <img src="static/images/sim_preview/ms3/ms3_lift_peg_upright.png" alt="Lift Peg Upright">
+        <img src="static/images/sim_preview/ms3/ms3_maniskill_hab.png" alt="ManiSkill Habitat">
+        <img src="static/images/sim_preview/ms3/ms3_open_cabinet.png" alt="Open Cabinet">
+        <img src="static/images/sim_preview/ms3/ms3_pick_cube_widowx.png" alt="Pick Cube">
+        <img src="static/images/sim_preview/ms3/ms3_poke_cube.png" alt="Poke Cube">
+      </div>
+    </section>
+
+    <section id="unity" class="sim-section">
+      <h3><a src="https://unity-technologies.github.io/ml-agents/Learning-Environment-Examples/" target="_blank">Unity
+          ML-Agents</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/unity/unity_3d_balance_ball.png" alt="3D Balance Ball">
+        <img src="static/images/sim_preview/unity/unity_basic.png" alt="Basic">
+        <img src="static/images/sim_preview/unity/unity_crawler.png" alt="Crawler">
+        <img src="static/images/sim_preview/unity/unity_dungeon_escape.png" alt="Dungeon Escape">
+        <img src="static/images/sim_preview/unity/unity_grid_world.png" alt="Grid World">
+        <img src="static/images/sim_preview/unity/unity_hallway.png" alt="Hallway">
+        <img src="static/images/sim_preview/unity/unity_push_block.png" alt="Push Block">
+        <img src="static/images/sim_preview/unity/unity_pyramids.png" alt="Pyramids">
+        <img src="static/images/sim_preview/unity/unity_soccer_two.png" alt="Soccer Two">
+        <img src="static/images/sim_preview/unity/unity_walker.png" alt="Walker">
+      </div>
+    </section>
+
+    <section id="coppeliasim_rlbench" class="sim-section">
+      <h3><a src="https://github.com/stepjam/RLBench/tree/master/rlbench/tasks" target="_blank">CoppeliaSim/RLBench</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/rlbench/rlbench_CloseBox_04.png" alt="Close Box">
+        <img src="static/images/sim_preview/rlbench/rlbench_CloseFridge_01.png" alt="Close Fridge">
+        <img src="static/images/sim_preview/rlbench/rlbench_CloseMicrowave_00.png" alt="Close Microwave">
+        <img src="static/images/sim_preview/rlbench/rlbench_PickAndLift_03.png" alt="Pick and Lift">
+        <img src="static/images/sim_preview/rlbench/rlbench_PlugChargerInPowerSupply_07.png"
+          alt="Plug Charger in Power Supply">
+        <img src="static/images/sim_preview/rlbench/rlbench_PutUmbrellaInUmbrellaStand_05.png"
+          alt="Put Umbrella in Umbrella Stand">
+        <img src="static/images/sim_preview/rlbench/rlbench_ReachTarget_08.png" alt="Reach Target">
+        <img src="static/images/sim_preview/rlbench/rlbench_SlideCabinetOpen_06.png" alt="Slide Cabinet Open">
+        <img src="static/images/sim_preview/rlbench/rlbench_TakeUmbrellaOutOfUmbrellaStand_09.png"
+          alt="Take Umbrella Out of Stand">
+        <img src="static/images/sim_preview/rlbench/rlbench_ToiletSeatDown_02.png" alt="Toilet Seat Down">
+      </div>
+    </section>
+
+    <section id="gazebo" class="sim-section">
+      <h3><a src="https://github.com/stepjam/RLBench/tree/master/rlbench/tasks" target="_blank">Gazebo</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_0.png" alt="Gazebo Scene 0">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_1.png" alt="Gazebo Scene 1">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_2.png" alt="Gazebo Scene 2">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_3.png" alt="Gazebo Scene 3">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_4.png" alt="Gazebo Scene 4">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_5.png" alt="Gazebo Scene 5">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_6.png" alt="Gazebo Scene 6">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_7.png" alt="Gazebo Scene 7">
+        <!-- https://www.researchgate.net/publication/359692837_An_intelligent_manufacturing_cell_based_on_human-robot_collaboration_of_frequent_task_learning_for_flexible_manufacturing -->
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_8.png" alt="Gazebo Scene 8">
+        <!-- https://www.researchgate.net/publication/363920301_Bimanual_rope_manipulation_skill_synthesis_through_context_dependent_correction_policy_learning_from_human_demonstration-->
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_9.png" alt="Gazebo Scene 9">
+      </div>
+    </section>
+
+    <section id="carla" class="sim-section">
+      <h3><a src="https://carla.readthedocs.io/en/latest/" target="_blank">CARLA</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_9.png" alt="CARLA Release Scene 9">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_0.png" alt="CARLA Release Video Frame 0">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_1.png" alt="CARLA Release Video Frame 1">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_2.png" alt="CARLA Release Video Frame 2">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_3.png" alt="CARLA Release Video Frame 3">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_4.png" alt="CARLA Release Video Frame 4">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_5.png" alt="CARLA Release Video Frame 5">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_6.png" alt="CARLA Release Video Frame 6">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_7.png" alt="CARLA Release Video Frame 7">
+        <img src="static/images/sim_preview/carla/carla_release_0_9_16_8.png" alt="CARLA Release 0_9_16_8">
+      </div>
+    </section>
+
+    <section id="habitat" class="sim-section">
+      <h3><a src="https://aihabitat.org/" target="_blank">Habitat</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/habitat/habitat_embodied_qa.png" alt="Embodied QA">
+        <img src="static/images/sim_preview/habitat/habitat_humanoid_motion.png" alt="Humanoid Motion">
+        <img src="static/images/sim_preview/habitat/habitat_instruct_following.png" alt="Instruction Following">
+        <img src="static/images/sim_preview/habitat/habitat_object_nav.png" alt="Object Navigation">
+        <img src="static/images/sim_preview/habitat/habitat_rearrange_challenge.png" alt="Rearrangement Challenge">
+        <img src="static/images/sim_preview/habitat/habitat_rearrange_challenge_2.png" alt="Rearrangement Challenge 2">
+        <img src="static/images/sim_preview/habitat/habitat_replica_cad.png" alt="Replica CAD">
+        <img src="static/images/sim_preview/habitat/habitat_replica_cad_2.png" alt="Replica CAD 2">
+        <img src="static/images/sim_preview/habitat/habitat_room_nav.png" alt="Room Navigation">
+        <img src="static/images/sim_preview/habitat/habitat_social_rearrangement.png" alt="Social Rearrangement">
+      </div>
+    </section>
+
+    <section id="ai2thor" class="sim-section">
+      <h3><a src="https://ai2thor.allenai.org/" target="_blank">AI2THOR</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_ithor.jpg" alt="iTHOR Overview">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_ithor_0.png" alt="iTHOR Scene 0">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_ithor_1.png" alt="iTHOR Scene 1">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_ithor_2.png" alt="iTHOR Scene 2">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_manipulathor_0.png" alt="Manipulator Task 0">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_manipulathor_1.jpg" alt="Manipulator Task 1">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_procthor_0.png" alt="ProcTHOR Task 0">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_procthor_1.png" alt="ProcTHOR Task 1">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_robothor.jpg" alt="RoboTHOR Overview">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_robothor.png" alt="RoboTHOR Scene">
+      </div>
+    </section>
+
+    <section id="robosuite" class="sim-section">
+      <h3><a src="https://robosuite.ai/docs/modules/environments.html" target="_blank">Robosuite</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/robosuite/robosuite_door.png" alt="Door">
+        <img src="static/images/sim_preview/robosuite/robosuite_handover.png" alt="Handover">
+        <img src="static/images/sim_preview/robosuite/robosuite_lift.png" alt="Lift">
+        <img src="static/images/sim_preview/robosuite/robosuite_nut_assembly.png" alt="Nut Assembly">
+        <img src="static/images/sim_preview/robosuite/robosuite_peg_hole.png" alt="Peg Hole">
+        <img src="static/images/sim_preview/robosuite/robosuite_pick_place.png" alt="Pick & Place">
+        <img src="static/images/sim_preview/robosuite/robosuite_stack.png" alt="Stack">
+        <img src="static/images/sim_preview/robosuite/robosuite_stack_2.png" alt="Stack 2">
+        <img src="static/images/sim_preview/robosuite/robosuite_two_arm_lift.png" alt="Two-Arm Lift">
+        <img src="static/images/sim_preview/robosuite/robosuite_wipe.png" alt="Wipe">
+      </div>
+    </section>
+
+    <section id="igibson" class="sim-section">
+      <h3><a src="https://svl.stanford.edu/igibson/" target="_blank">iGibson</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/igibson/igibson_0.png" alt="iGibson Scene 0">
+        <img src="static/images/sim_preview/igibson/igibson_1.png" alt="iGibson Scene 1">
+        <img src="static/images/sim_preview/igibson/igibson_2.png" alt="iGibson Scene 2">
+        <img src="static/images/sim_preview/igibson/igibson_3.png" alt="iGibson Scene 3">
+        <img src="static/images/sim_preview/igibson/igibson_4.png" alt="iGibson Scene 4">
+        <img src="static/images/sim_preview/igibson/igibson_5.png" alt="iGibson Scene 5">
+        <img src="static/images/sim_preview/igibson/igibson_6.png" alt="iGibson Scene 6">
+        <img src="static/images/sim_preview/igibson/igibson_7.png" alt="iGibson Scene 7">
+        <img src="static/images/sim_preview/igibson/igibson_8.png" alt="iGibson Scene 8">
+        <img src="static/images/sim_preview/igibson/igibson_9.png" alt="iGibson Scene 9">
+      </div>
+    </section>
+
+    <section id="mujoco_playground" class="sim-section">
+      <h3><a src="https://playground.mujoco.org/" target="_blank">MuJoCo Playground</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_aloha.png" alt="Aloha">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_hand_manip.png" alt="Hand Manipulation">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_loco.png" alt="Locomotion">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_loco_2.png" alt="Locomotion 2">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_loco_3.png" alt="Locomotion 3">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_loco_4.png" alt="Locomotion 4">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_loco_5.png" alt="Locomotion 5">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_pick.png" alt="Pick">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_pick_2.png" alt="Pick 2">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_place.png" alt="Place">
+      </div>
+    </section>
+
+    <section id="pybullet" class="sim-section">
+      <h3><a src="https://pybullet.org/wordpress/" target="_blank">PyBullet</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/pybullet/pybullet_0.png" alt="PyBullet Scene 0">
+        <img src="static/images/sim_preview/pybullet/pybullet_1.png" alt="PyBullet Scene 1">
+        <img src="static/images/sim_preview/pybullet/pybullet_2.png" alt="PyBullet Scene 2">
+        <img src="static/images/sim_preview/pybullet/pybullet_3.png" alt="PyBullet Scene 3">
+        <img src="static/images/sim_preview/pybullet/pybullet_4.png" alt="PyBullet Scene 4">
+        <img src="static/images/sim_preview/pybullet/pybullet_5.png" alt="PyBullet Scene 5">
+        <img src="static/images/sim_preview/pybullet/pybullet_6.png" alt="PyBullet Scene 6">
+        <img src="static/images/sim_preview/pybullet/pybullet_7.png" alt="PyBullet Scene 7">
+        <img src="static/images/sim_preview/pybullet/pybullet_8.png" alt="PyBullet Scene 8">
+        <img src="static/images/sim_preview/pybullet/pybullet_9.png" alt="PyBullet Scene 9">
+      </div>
+    </section>
+  </section>
+
+  <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
-<!--End BibTex citation -->
+  </section>
+  <!--End BibTex citation -->
 
 
   <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
 
+          </div>
         </div>
       </div>
     </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+
+  <div id="img-modal" class="modal">
+    <span class="modal-close"></span>
+    <img id="modal-img" class="modal-img" src="" alt="">
+    <div id="modal-caption" class="modal-caption"></div>
   </div>
-</footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <script>
+    const modal = document.getElementById('img-modal');
+    const modalImg = document.getElementById('modal-img');
+    const caption = document.getElementById('modal-caption');
+    const closeBtn = document.querySelector('.modal-close');
 
-    <!-- End of Statcounter Code -->
+    // open on any mosaic image click
+    document.querySelectorAll('.mosaic img').forEach(img => {
+      img.addEventListener('click', () => {
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+        caption.textContent = img.alt || '';
+        modal.classList.add('show');
+      });
+    });
 
-  </body>
-  </html>
+    // close when clicking the × or clicking outside the image
+    closeBtn.addEventListener('click', () => modal.classList.remove('show'));
+    modal.addEventListener('click', e => {
+      if (e.target === modal) modal.classList.remove('show');
+    });
+  </script>
+
+</body>
+
+</html>
