@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="robotlearningproblem.github.io/Robot-Learning-Problem" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="robots, machine learning, reinforcement learning, simulation, physics engine">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <!--<link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/sim_gallery.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Survey on Physics Engines, Simulation Frameworks, and Benchmarks
+              for Robot Learning</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://alexandrebrown.github.io/" target="_blank">Alexandre Brown</a><sup>*1,8</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.vivekroboticist.com/" target="_blank">Vivek Shankar Varadharajan</a><sup>*2,8</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.ias.informatik.tu-darmstadt.de/Team/NicoBohlinger" target="_blank">Nico Bohlinger</a><sup>*3</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://www.linkedin.com/in/elham-daneshmand/" target="_blank">Elham Daneshmand</a><sup>*4,8</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://mila.quebec/en/directory/maeva-guerrier" target="_blank">Maeva Guerrier</a><sup>*2,8</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://www.reggiemclean.ca" target="_blank">Reginald McLean</a><sup>*5</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=UHWkDfkAAAAJ&hl=en" target="_blank">Michael Przystupa</a><sup>*6,7</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://ozgraslan.github.io/" target="_blank">Ozgur Aslan</a><sup>1,8</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://akuramshin.github.io/" target="_blank">Artur Kuramshin</a><sup>1,8</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://velythyl.github.io/" target="_blank">Charlie Gauthier</a><sup>1,8</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://mikes96.github.io/" target="_blank">Miguel Saavedra-Ruiz</a><sup>1,8</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://liampaull.ca/" target="_blank">Liam Paull</a><sup>1,8</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://www.ias.informatik.tu-darmstadt.de/Member/JanPeters" target="_blank">Jan Peters</a><sup>9,10,11</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://mistlab.ca/people/beltrame/" target="_blank">Giovanni Beltrame</a><sup>2,8</sup>,</span>
+              </span>
+              <span class="author-block">
+                <a href="https://neo-x.github.io/" target="_blank">Glen Berseth</a><sup>1,8</sup></span>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Université de Montréal, <sup>2</sup> Polytechnique Montréal, <sup>3</sup> Technical University of Darmstadt, <sup>4</sup>McGill University, <sup>5</sup>Toronto Metropolitan University, <sup>6</sup>University of Alberta, <sup>7</sup>Alberta Machine Intelligence Institute (Amii), <sup>8</sup>Mila - Québec AI Institute, <sup>9</sup>German Research Center for AI (DFKI), <sup>10</sup>Hessian.AI, <sup>11</sup>Robotics Institute Germany (RIG).</span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/robotlearningproblem/Robot-Learning-Problem" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Robot learning research is rapidly advancing and relies heavily on simulation tools---physics engines,
+              simulation frameworks, and benchmarks---to develop and evaluate algorithms faster, safer, and more
+              cost-effectively than using physical hardware alone. However, the recent explosion of such tools has
+              created a fragmented landscape, making it difficult for researchers to navigate options or forcing them to
+              constantly re-implement baselines. This challenge is amplified by blurry terminology, where terms like
+              "simulator" are used ambiguously. To address this, our survey makes four key contributions: (1) We
+              introduce a formal Robot Learning Problem definition to standardize terminology and categorize existing
+              tools accordingly. (2) We provide a comprehensive overview of the features, strengths, and weaknesses of
+              current simulation tools, based on literature and hands-on evaluation. (3) We offer guidelines for tool
+              selection tailored to major robot learning domains: vision manipulation, locomotion, and navigation. (4)
+              We introduce an accompanying open, living repository to track updates in the field. By systematically
+              structuring the simulation landscape, we aim to lower the entry barrier for newcomers, reduce redundant
+              engineering for experts, and accelerate progress toward reproducible, general-purpose robot learning
+              systems.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <section class="robot-learning-gallery" style="display: flex; flex-direction: column; align-items: center; max-width: 700px; margin: 0 auto; font-size: 0.95em;">
+  <h2 class="title is-4" style="text-align: center; font-size: 1.6em;">Robot Learning Problem Diagram</h2>
+  <div class="mosaic" style="display: flex; gap: 1em; justify-content: center;">
+    <figure>
+      <img id="flowchart-img" src="static/images/robot_learning_diagram/Flowchart.png" alt="Outline of Robot Learning" style="cursor: pointer; max-width: 720px ; height: auto;">
+      <figcaption style="text-align: center; font-size: 0.95em;">Outline of Robot Learning</figcaption>
+    </figure>
+  </div>
+  <div style="text-align: center; margin-top: 1em; font-weight: bold; font-size: 0.95em;">
+    The robot learning problem is complex and requires a variety of software tools to solve. The diagram above illustrates the
+    different components involved in the robot learning problem, including the simulation environment, physics engine,
+    and robot learning algorithms. The role of different components make it challenging to itemize software tools in mutually exclusive categories.
+  </div>
+</section>
+
+  <section class="sim-gallery">
+    <h2 class="title is-3">Simulation Frameworks/Benchmarks Gallery</h2>
+
+    <section id="isaacsim" class="sim-section">
+      <h3><a href="https://isaac-sim.github.io/IsaacLab/main/source/overview/environments.html"
+          target="_blank">IsaacSim</a></h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_ant.jpg"
+          alt="Move towards a direction with the MuJoCo ant robot.">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_automate_assembly.jpg"
+          alt="Insert a plug into its corresponding socket with the Franka robot.">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_contact_rich.jpg"
+          alt="Insert and mesh gear into the base with other gears, using the Franka robot.">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_franka_lift.jpg"
+          alt="Pick a cube and bring it to a sampled target position with the Franka robot.">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_franka_stack.jpg"
+          alt="Stack three cubes (bottom to top: blue, red, green) with the Franka robot.">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_gr1_pick_place.jpg"
+          alt="Pick up and place an object in a basket with a GR-1 humanoid robot.">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_h1_rough.jpg"
+          alt="Track a velocity command on rough terrain with the Unitree H1 robot.">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_manip_world.jpg"
+          alt="Passing an object from one hand over to the other hand.">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_nav.jpg"
+          alt="Navigate towards a target x-y position and heading with the ANYmal C robot.">
+        <img src="static/images/sim_preview/isaacsim/isaac_sim_open_drawer.jpg"
+          alt="Grasp the handle of a cabinet's drawer and open it with the Franka robot.">
+      </div>
+    </section>
+
+    <section id="sapien_ms3" class="sim-section">
+      <h3><a href="https://maniskill.readthedocs.io/en/latest/tasks/index.html" target="_blank">Sapien/Maniskill3</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/ms3/ms3_anymalc_reach.png"
+          alt="Control the AnymalC robot to reach a target location in front of it.">
+        <img src="static/images/sim_preview/ms3/ms3_assembling_kits.png"
+          alt="The robot must pick up one of the misplaced shapes on the board/kit and insert it into the correct empty slot.">
+        <img src="static/images/sim_preview/ms3/ms3_g1_apple_in_bowl.png"
+          alt="Control the humanoid unitree G1 robot to grab an apple with its right arm and place it in a bowl to the side.">
+        <img src="static/images/sim_preview/ms3/ms3_g1_transport_box.png"
+          alt="A G1 humanoid robot must find a box on a table and transport it to the other table and place it there..">
+        <img src="static/images/sim_preview/ms3/ms3_hand_manip.png"
+          alt="Using the allegro hand with tactile sensors, rotate a random object.">
+        <img src="static/images/sim_preview/ms3/ms3_lift_peg_upright.png"
+          alt="A simple task where the objective is to move a peg laying on the table to any upright position on the table.">
+        <img src="static/images/sim_preview/ms3/ms3_maniskill_hab.png"
+          alt="Use the Fetch mobile manipulation robot to rearrange objects in a complex scene.">
+        <img src="static/images/sim_preview/ms3/ms3_open_cabinet.png"
+          alt="Use the Fetch mobile manipulation robot to move towards a target cabinet and open the target drawer out.">
+        <img src="static/images/sim_preview/ms3/ms3_pick_cube_widowx.png"
+          alt="A simple task where the objective is to grasp a red cube with the (WidowX/Franka/SO100) robot and move it to a target goal position.">
+        <img src="static/images/sim_preview/ms3/ms3_poke_cube.png"
+          alt="A simple task where the objective is to poke a red cube with a peg and push it to a target goal position.">
+      </div>
+    </section>
+
+    <section id="unity" class="sim-section">
+      <h3><a href="https://unity-technologies.github.io/ml-agents/Learning-Environment-Examples/" target="_blank">Unity
+          ML-Agents</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/unity/unity_3d_balance_ball.png"
+          alt="A balance-ball task, where the agent balances the ball on it's head.">
+        <img src="static/images/sim_preview/unity/unity_basic.png"
+          alt="A linear movement task where the agent must move left or right to rewarding states.">
+        <img src="static/images/sim_preview/unity/unity_crawler.png"
+          alt="A creature with 4 arms and 4 forearms. The agents must move its body toward the goal direction without falling.">
+        <img src="static/images/sim_preview/unity/unity_dungeon_escape.png"
+          alt="Agents are trapped in a dungeon with a dragon, and must work together to escape.">
+        <img src="static/images/sim_preview/unity/unity_grid_world.png"
+          alt="A multi-goal version of the grid-world task. The agent must navigate the grid to the appropriate goal while avoiding the obstacles.">
+        <img src="static/images/sim_preview/unity/unity_hallway.png"
+          alt="Environment where the agent needs to find information in a room, remember it, and use it to move to the correct goal.">
+        <img src="static/images/sim_preview/unity/unity_push_block.png"
+          alt="A platforming environment where the agent can push a block around. The agent must push the block to the goal">
+        <img src="static/images/sim_preview/unity/unity_pyramids.png"
+          alt="Environment where the agent needs to press a button to spawn a pyramid, then navigate to the pyramid, knock it over, and move to the gold brick at the top.">
+        <img src="static/images/sim_preview/unity/unity_soccer_two.png"
+          alt="Environment where four agents compete in a 2 vs 2 toy soccer game.">
+        <img src="static/images/sim_preview/unity/unity_walker.png"
+          alt="Physics-based Humanoid agents with 26 degrees of freedom. The agents must move its body toward the goal direction without falling.">
+      </div>
+    </section>
+
+    <section id="coppeliasim_rlbench" class="sim-section">
+      <h3><a href="https://github.com/stepjam/RLBench/tree/master/rlbench/tasks" target="_blank">CoppeliaSim/RLBench</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/rlbench/rlbench_CloseBox_04.png" alt="The agent needs to close a box.">
+        <img src="static/images/sim_preview/rlbench/rlbench_CloseFridge_01.png"
+          alt="The agent needs to close a fridge.">
+        <img src="static/images/sim_preview/rlbench/rlbench_CloseMicrowave_00.png"
+          alt="The agent needs to close a microwave.">
+        <img src="static/images/sim_preview/rlbench/rlbench_PickAndLift_03.png"
+          alt="The agent needs to pick up the block and lift it up to the target.">
+        <img src="static/images/sim_preview/rlbench/rlbench_PlugChargerInPowerSupply_07.png"
+          alt="The agent needs to lift the charger up to the wall and plug it in.">
+        <img src="static/images/sim_preview/rlbench/rlbench_PutUmbrellaInUmbrellaStand_05.png"
+          alt="The agent needs to pick up the umbrella and drop it in its stand.">
+        <img src="static/images/sim_preview/rlbench/rlbench_ReachTarget_08.png"
+          alt="The agent needs to touch the ball with the panda gripper.">
+        <img src="static/images/sim_preview/rlbench/rlbench_SlideCabinetOpen_06.png"
+          alt="The agent needs to grip the handle and slide the door open.">
+        <img src="static/images/sim_preview/rlbench/rlbench_TakeUmbrellaOutOfUmbrellaStand_09.png"
+          alt="Grasping the umbrella by its handle, lift it up and out of the stand.">
+        <img src="static/images/sim_preview/rlbench/rlbench_ToiletSeatDown_02.png" alt="Put the toilet seat down.">
+      </div>
+    </section>
+
+    <section id="gazebo" class="sim-section">
+      <h3><a href="https://gazebosim.org/home" target="_blank">Gazebo</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_0.png"
+          alt="Robot manipulation in a complex factory setting.">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_1.png" alt="Full body humanoid robot definition.">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_2.png"
+          alt="Preview of a complex scene that is part of the Gazebo SubT Challenge.">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_3.png" alt="Custom under-water vehicle in Gazebo.">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_4.png"
+          alt="Humanoid model captured by complex sensors (thermal & depth).">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_5.png"
+          alt="Robot locomotion in a complex factory setting.">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_6.png" alt="Complex office model in Gazebo.">
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_7.png" alt="Outdoor scene with water.">
+        <!-- https://www.researchgate.net/publication/359692837_An_intelligent_manufacturing_cell_based_on_human-robot_collaboration_of_frequent_task_learning_for_flexible_manufacturing -->
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_8.png"
+          alt="Robot manipulation as shown in the paper: An intelligent manufacturing cell based on human-robot collaboration of frequent task learning for flexible manufacturing.">
+        <!-- https://www.researchgate.net/publication/363920301_Bimanual_rope_manipulation_skill_synthesis_through_context_dependent_correction_policy_learning_from_human_demonstration-->
+        <img src="static/images/sim_preview/gazebo/gazebo_gallery_9.png"
+          alt="Robot manipulation as seen in the paper: Bimanual rope manipulation skill synthesis through context dependent correction policy learning from human demonstration.">
+      </div>
+    </section>
+
+    <section id="carla" class="sim-section">
+      <h3><a href="https://carla.readthedocs.io/en/latest/" target="_blank">CARLA</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_9.png" alt="">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_0.png" alt="">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_1.png" alt="">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_2.png" alt="">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_3.png" alt="">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_4.png" alt="">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_5.png" alt="">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_6.png" alt="">
+        <img src="static/images/sim_preview/carla/carla_0.10.0_release_video_7.png" alt="">
+        <img src="static/images/sim_preview/carla/carla_release_0_9_16_8.png" alt="">
+      </div>
+    </section>
+
+    <section id="habitat" class="sim-section">
+      <h3><a href="https://aihabitat.org/" target="_blank">Habitat</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/habitat/habitat_embodied_qa.png"
+          alt="Embodied Question Answering challenges an AI agent to spawn at a random location in a 3D environment, explore via egocentric vision to gather information, and then answer a posed question about the scene.">
+        <img src="static/images/sim_preview/habitat/habitat_humanoid_motion.png"
+          alt="Habitat 3.0 uses a motion and behavior generation policy, enabling the programmatic control of avatars for navigation, object interaction, and various other motions.">
+        <img src="static/images/sim_preview/habitat/habitat_instruct_following.png"
+          alt="This image shows an embodied agent navigating a photorealistic Habitat environment as it follows given instructions to locate and interact with a specified goal.">
+        <img src="static/images/sim_preview/habitat/habitat_object_nav.png"
+          alt="This image shows an embodied agent exploring a photorealistic Habitat environment using egocentric vision to locate and navigate to a specified target object.">
+        <img src="static/images/sim_preview/habitat/habitat_rearrange_challenge.png"
+          alt="The agent needs to methodically rearranging objects to match a specified goal configuration.">
+        <img src="static/images/sim_preview/habitat/habitat_rearrange_challenge_2.png"
+          alt="The agent needs to methodically rearranging objects to match a specified goal configuration.">
+        <img src="static/images/sim_preview/habitat/habitat_replica_cad.png"
+          alt="High-fidelity Habitat Replica CAD environment reconstructed from detailed indoor scene scans.">
+        <img src="static/images/sim_preview/habitat/habitat_replica_cad_2.png"
+          alt="High-fidelity Habitat Replica CAD environment reconstructed from detailed indoor scene scans.">
+        <img src="static/images/sim_preview/habitat/habitat_room_nav.png"
+          alt="Using egocentric vision the agent needs to navigate through connected rooms toward a designated destination.">
+        <img src="static/images/sim_preview/habitat/habitat_social_rearrangement.png"
+          alt="Agents need to collaboratively rearrange objects as part of a social interaction task.">
+      </div>
+    </section>
+
+    <section id="ai2thor" class="sim-section">
+      <h3><a href="https://ai2thor.allenai.org/" target="_blank">AI2THOR</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_ithor.jpg" alt="iTHOR scene example.">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_ithor_0.png"
+          alt="iTHOR scene example where the agent needs to open a drawer to place objects in it.">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_ithor_1.png"
+          alt="iTHOR scene example where the agent needs to pour liquid into a glass.">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_ithor_2.png"
+          alt="iTHOR scene example where the state of the object changes as it is being cooked.">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_manipulathor_0.png"
+          alt="ManipulaTHOR example showing a robot grabbing a fruit.">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_manipulathor_1.jpg"
+          alt="ManipulaTHOR example showing a robot grabbing a fruit.">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_procthor_0.png" alt="ProcTHOR scene example.">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_procthor_1.png" alt="ProcTHOR scene example.">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_robothor.jpg" alt="RoboTHOR Real vs Sim scene comparison.">
+        <img src="static/images/sim_preview/ai2thor/ai2thor_robothor.png" alt="RoboTHOR scene.">
+      </div>
+    </section>
+
+    <section id="robosuite" class="sim-section">
+      <h3><a href="https://robosuite.ai/docs/modules/environments.html" target="_blank">Robosuite</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/robosuite/robosuite_door.png"
+          alt="The robot arm must learn to turn the handle and open the door.">
+        <img src="static/images/sim_preview/robosuite/robosuite_handover.png"
+          alt="The two robot arms must coordinate so that the arm closer to the hammer picks it up and hands it to the other arm.">
+        <img src="static/images/sim_preview/robosuite/robosuite_lift.png"
+          alt="The robot arm must lift the cube above a certain height.">
+        <img src="static/images/sim_preview/robosuite/robosuite_nut_assembly.png"
+          alt="The robot must fit the square nut onto the square peg and the round nut onto the round peg.">
+        <img src="static/images/sim_preview/robosuite/robosuite_peg_hole.png"
+          alt="The two robot arms must coordinate to insert the peg into the hole.">
+        <img src="static/images/sim_preview/robosuite/robosuite_pick_place.png"
+          alt="The robot must place each object into its corresponding container.">
+        <img src="static/images/sim_preview/robosuite/robosuite_stack.png"
+          alt="The robot must place one cube on top of the other cube.">
+        <img src="static/images/sim_preview/robosuite/robosuite_stack_2.png"
+          alt="The robot must place one cube on top of the other cube.">
+        <img src="static/images/sim_preview/robosuite/robosuite_two_arm_lift.png"
+          alt="The two robot arms must each grab a handle and lift the pot together, above a certain height, while keeping the pot level.">
+        <img src="static/images/sim_preview/robosuite/robosuite_wipe.png"
+          alt="The robot arm must learn to wipe the whiteboard surface and clean all of the markings.">
+      </div>
+    </section>
+
+    <section id="igibson" class="sim-section">
+      <h3><a href="https://svl.stanford.edu/igibson/" target="_blank">iGibson</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/igibson/igibson_0.png" alt="">
+        <img src="static/images/sim_preview/igibson/igibson_1.png" alt="">
+        <img src="static/images/sim_preview/igibson/igibson_2.png" alt="">
+        <img src="static/images/sim_preview/igibson/igibson_3.png" alt="">
+        <img src="static/images/sim_preview/igibson/igibson_4.png" alt="">
+        <img src="static/images/sim_preview/igibson/igibson_5.png" alt="">
+        <img src="static/images/sim_preview/igibson/igibson_6.png" alt="">
+        <img src="static/images/sim_preview/igibson/igibson_7.png" alt="">
+        <img src="static/images/sim_preview/igibson/igibson_8.png" alt="">
+        <img src="static/images/sim_preview/igibson/igibson_9.png" alt="">
+      </div>
+    </section>
+
+    <section id="mujoco_playground" class="sim-section">
+      <h3><a href="https://playground.mujoco.org/" target="_blank">MuJoCo Playground</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_aloha.png"
+          alt="A precise peg-insertion task in the ALOHA benchmark environment.">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_hand_manip.png"
+          alt="Agent controlling a simulated robotic hand to perform precise hand manipulation tasks.">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_loco.png" alt="Locomotion task.">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_loco_2.png" alt="Locomotion task.">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_loco_3.png" alt="Locomotion task.">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_loco_4.png" alt="Locomotion task.">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_loco_5.png" alt="Locomotion task.">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_pick.png"
+          alt="The agent needs to pick th cube.">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_pick_2.png"
+          alt="The agent needs to pick th cube.">
+        <img src="static/images/sim_preview/mujoco_playground/mujoco_playground_place.png"
+          alt="Agent controlling a simulated robotic hand to perform precise hand manipulation tasks to position the box in the right orientation and position. ">
+      </div>
+    </section>
+
+    <section id="pybullet" class="sim-section">
+      <h3><a href="https://pybullet.org/wordpress/" target="_blank">PyBullet</a>
+      </h3>
+      <div class="mosaic">
+        <img src="static/images/sim_preview/pybullet/pybullet_0.png" alt="Table tennis scene example.">
+        <img src="static/images/sim_preview/pybullet/pybullet_1.png" alt="Table-top robot manipulation example">
+        <img src="static/images/sim_preview/pybullet/pybullet_2.png"
+          alt="Robot manipulation task where the robot must learn to pick and throw arbitrary objects into selected boxes.">
+        <img src="static/images/sim_preview/pybullet/pybullet_3.png" alt="">
+        <img src="static/images/sim_preview/pybullet/pybullet_4.png"
+          alt="Table-top robotic manipulation pick & place task.">
+        <img src="static/images/sim_preview/pybullet/pybullet_5.png" alt="Locomotion task.">
+        <img src="static/images/sim_preview/pybullet/pybullet_6.png"
+          alt="Robot assistance task where the agent needs to assist a patient.">
+        <img src="static/images/sim_preview/pybullet/pybullet_7.png"
+          alt="Robot assistance task where the agent needs to treat a patient.">
+        <img src="static/images/sim_preview/pybullet/pybullet_8.png" alt="">
+        <img src="static/images/sim_preview/pybullet/pybullet_9.png" alt="">
+      </div>
+    </section>
+  </section>
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+
+  <div id="img-modal" class="modal">
+    <span class="modal-close"></span>
+    <img id="modal-img" class="modal-img" src="" alt="">
+    <div id="modal-caption" class="modal-caption"></div>
+  </div>
+
+  <script>
+    const modal = document.getElementById('img-modal');
+    const modalImg = document.getElementById('modal-img');
+    const caption = document.getElementById('modal-caption');
+    const closeBtn = document.querySelector('.modal-close');
+
+    // open on any mosaic image click (gallery images)
+    document.querySelectorAll('.mosaic img').forEach(img => {
+      // Only add the default gallery handler if not the flowchart image
+      if (img.id !== 'flowchart-img') {
+        img.addEventListener('click', () => {
+          modalImg.src = img.src;
+          modalImg.alt = img.alt;
+          caption.textContent = img.alt || '';
+          modal.classList.add('show');
+        });
+      }
+    });
+
+    // Special handler for flowchart image
+    const flowchartImg = document.getElementById('flowchart-img');
+    if (flowchartImg) {
+      flowchartImg.addEventListener('click', () => {
+        modalImg.src = 'static/images/robot_learning_diagram/Flowchart2.png';
+        modalImg.alt = 'Details of software tools';
+        caption.textContent = 'Details of software tools';
+        modal.classList.add('show');
+      });
+    }
+
+    // close when clicking the × or clicking outside the image
+    closeBtn.addEventListener('click', () => modal.classList.remove('show'));
+    modal.addEventListener('click', e => {
+      if (e.target === modal) modal.classList.remove('show');
+    });
+  </script>
+
+</body>
+
+</html>
